@@ -1,0 +1,22 @@
+CREATE TABLE [dbo].[PrmsBlotter](
+	[ID] [int] IDENTITY(1,1) NOT NULL,
+	[BBox] [varchar](250) NOT NULL,
+	[RunDateStart] [datetime] NOT NULL,
+	[RunType] [varchar](50) NOT NULL,
+	[TestDateFrom] [date] NULL,
+	[TestDateTo] [date] NULL,
+	[GrossPnL] [decimal](19, 4) NOT NULL,
+	[NetPnL] [decimal](19, 4) NOT NULL,
+	[CPS] [decimal](19, 4) NOT NULL,
+	[SharesTraded] [int] NOT NULL,
+	[MaxExposure] [decimal](19, 4) NOT NULL,
+	[PercentageWinners] [float] NOT NULL,
+	[NumberWinners] [int] NOT NULL,
+	[NumberLosers] [int] NOT NULL,
+	[TimeFrame] [varchar](50) NOT NULL,
+	[RunID] [varchar](50) NOT NULL,
+	[GrossCommission] [float] NOT NULL,
+	[ECNFee] [float] NOT NULL,
+	[SECFee] [float] NOT NULL,
+	[TAFFee] [float] NOT NULL
+)
