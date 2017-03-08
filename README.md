@@ -19,3 +19,5 @@
  * remove extra backtests. Run IdentifyDuplicateBacktests.sql after running to make sure none exist.
 * `PR_LiveVsBt.sql`
  * returns the final tracking result. 
+* `CheckIfThereAreMissingBackTests.sql`
+ * returns all the live runs for which there's no backtest
