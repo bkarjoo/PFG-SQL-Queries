@@ -1,3 +1,3 @@
 SELECT COUNT(*) FROM [PrimusGroup].[dbo].[PrmsBlotter]
 GROUP BY RunID 
-HAVING COUNT(*) > 
+HAVING COUNT(*) > 1
