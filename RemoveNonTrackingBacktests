@@ -1,0 +1,3 @@
+DELETE
+  FROM [PrimusGroup].[dbo].[PrmsBlotter]
+  WHERE runtype = 'Backtesting' AND TimeFrame = 'Several days (partial)'
