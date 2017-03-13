@@ -9,4 +9,4 @@ where t.RunType = 'Live'
     where i.RunType = 'Backtesting'
       and i.BBox = t.BBox
       and convert(date,i.TestDateFrom) = convert(date,t.RunDateStart)
-      )
+      ) ORDER BY dd
