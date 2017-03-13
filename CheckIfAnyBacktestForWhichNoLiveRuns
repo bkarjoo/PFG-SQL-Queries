@@ -1,11 +1,11 @@
 select 
     t.BBox
   , convert(date, t.TestDateFrom) as dd, t.GrossPnl, t.SharesTraded, t.RunType 
-from [PrimusGroup].[dbo].[Quant1] t
+from [PrimusGroup].[dbo].[PrmsBlotter] t
 where t.RunType = 'Backtesting'
   and not exists (
     select 1
-    from [PrimusGroup].[dbo].[Quant1] i
+    from [PrimusGroup].[dbo].[PrmsBlotter] i
     where i.RunType = 'Live'
       and i.BBox = t.BBox
       and convert(date,i.RunDateStart) = convert(date,t.TestDateFrom))
